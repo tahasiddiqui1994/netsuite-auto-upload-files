@@ -2,7 +2,7 @@
   "name": "netsuite-auto-upload",
   "displayName": "NetSuite Auto-Upload",
   "description": "Automatically upload files to NetSuite File Cabinet on save. Lightning fast development workflow for SuiteScript developers.",
-  "version": "2.1.0",
+  "version": "2.1.6",
   "publisher": "tahasiddiqui",
   "author": {
     "name": "Muhammad Taha Siddiqui",
@@ -33,12 +33,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload"
+    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload-files"
   },
   "bugs": {
-    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload/issues"
+    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload-files/issues"
   },
-  "homepage": "https://github.com/tahasiddiqui1994/netsuite-auto-upload#readme",
+  "homepage": "https://github.com/tahasiddiqui1994/netsuite-auto-upload-files#readme",
   "activationEvents": [
     "workspaceContains:**/manifest.xml",
     "workspaceContains:**/FileCabinet/**",
