@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+    <projectname>NetSuite Auto-Upload RESTlet</projectname>
+    <frameworkversion>1.0</frameworkversion>
+    <dependencies>
+        <features>
+            <feature required="true">SERVERSIDESCRIPTING</feature>
+        </features>
+    </dependencies>
+</manifest>

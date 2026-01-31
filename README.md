@@ -41,11 +41,19 @@ Or search "NetSuite Auto-Upload" in VS Code Extensions.
 
 ### 2. Deploy the RESTlet to NetSuite
 
-1. Upload `netsuite-restlet/autoUploadRESTlet.js` to your File Cabinet
-2. Create a Script record (Customization → Scripting → Scripts → New)
-3. Deploy the script and copy the **External URL**
+```bash
+cd netsuite-restlet
+npm install
+npm run setup    # First time only - authenticate with NetSuite
+npm run deploy   # Deploy RESTlet + Script + Deployment
+```
 
-👉 See [Detailed RESTlet Setup Guide](./netsuite-restlet/DEPLOYMENT.md)
+After deployment:
+1. Go to **Customization → Scripting → Script Deployments**
+2. Find **"Auto Upload RESTlet Deployment"**
+3. Copy the **External URL**
+
+👉 See [netsuite-restlet/README.md](./netsuite-restlet/README.md) for OAuth setup
 
 ### 3. Configure Your Project
 
