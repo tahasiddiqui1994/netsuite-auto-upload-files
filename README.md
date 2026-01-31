@@ -1,7 +1,7 @@
 # 🚀 NetSuite Auto-Upload
 
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/tahasiddiqui.netsuite-auto-upload?style=flat-square&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=tahasiddiqui.netsuite-auto-upload)
-[![GitHub stars](https://img.shields.io/github/stars/tahasiddiqui1994/netsuite-auto-upload?style=flat-square&logo=github)](https://github.com/tahasiddiqui1994/netsuite-auto-upload)
+[![GitHub stars](https://img.shields.io/github/stars/tahasiddiqui1994/netsuite-auto-upload-files?style=flat-square&logo=github)](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 **Save once. Upload instantly. Stay in flow.**
@@ -36,7 +36,7 @@ ext install tahasiddiqui.netsuite-auto-upload
 Or search "NetSuite Auto-Upload" in VS Code Extensions.
 
 **From VSIX:**
-1. Download the `.vsix` file from [Releases](https://github.com/tahasiddiqui1994/netsuite-auto-upload/releases)
+1. Download the `.vsix` file from [Releases](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files/releases)
 2. In VS Code: `Ctrl+Shift+P` → "Install from VSIX"
 
 ### 2. Deploy the RESTlet to NetSuite
@@ -58,6 +58,10 @@ NS_CONSUMER_KEY=your_consumer_key
 NS_CONSUMER_SECRET=your_consumer_secret
 NS_TOKEN_ID=your_token_id
 NS_TOKEN_SECRET=your_token_secret
+NS_UPLOAD_FROM=dist
+NS_WATCH_FOLDER=src
+NS_ROOT_PATH=/SuiteScripts
+
 ```
 
 Or run: `Ctrl+Shift+P` → "NetSuite: Create .env File"
@@ -185,7 +189,7 @@ MIT License - see [LICENSE](./LICENSE) for details.
 **Muhammad Taha Siddiqui**
 
 - GitHub: [@tahasiddiqui1994](https://github.com/tahasiddiqui1994)
-- LinkedIn: [Muhammad Taha Siddiqui](https://linkedin.com/in/tahasiddiqui1994)
+- LinkedIn: [Muhammad Taha Siddiqui](https://www.linkedin.com/in/itahasiddiqui/)
 
 ---
 
