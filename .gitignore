@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+*.vsix
+out/
+dist/
+
+# IDE / Editors
+.vscode/*
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / Credentials (NEVER commit these!)
+.env
+.env.local
+.env.*.local
+.netsuite.env
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Source maps
+*.map
