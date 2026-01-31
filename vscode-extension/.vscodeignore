@@ -1,0 +1,19 @@
+# Exclude from VSIX package
+.vscode/**
+.vscode-test/**
+node_modules/**
+!node_modules/oauth-1.0a/**
+!node_modules/crypto-js/**
+!node_modules/minimatch/**
+!node_modules/brace-expansion/**
+!node_modules/balanced-match/**
+*.vsix
+.gitignore
+.git/**
+*.md
+!README.md
+test/**
+**/*.map
+.env*
+DEPLOYMENT.md
+INSTALLATION.md

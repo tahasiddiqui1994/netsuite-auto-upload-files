@@ -1,0 +1,207 @@
+{
+  "name": "netsuite-auto-upload",
+  "displayName": "NetSuite Auto-Upload",
+  "description": "Automatically upload files to NetSuite File Cabinet on save. Lightning fast development workflow for SuiteScript developers.",
+  "version": "2.1.0",
+  "publisher": "tahasiddiqui",
+  "author": {
+    "name": "Muhammad Taha Siddiqui",
+    "url": "https://github.com/tahasiddiqui1994"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0F1C2E",
+    "theme": "dark"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "netsuite",
+    "suitescript",
+    "auto-upload",
+    "file cabinet",
+    "sdf",
+    "suiteapp",
+    "erp",
+    "oracle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload"
+  },
+  "bugs": {
+    "url": "https://github.com/tahasiddiqui1994/netsuite-auto-upload/issues"
+  },
+  "homepage": "https://github.com/tahasiddiqui1994/netsuite-auto-upload#readme",
+  "activationEvents": [
+    "workspaceContains:**/manifest.xml",
+    "workspaceContains:**/FileCabinet/**",
+    "workspaceContains:**/.env",
+    "workspaceContains:**/*.js"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "netsuite-auto-upload.configure",
+        "title": "NetSuite: Configure Auto-Upload"
+      },
+      {
+        "command": "netsuite-auto-upload.enable",
+        "title": "NetSuite: Enable Auto-Upload"
+      },
+      {
+        "command": "netsuite-auto-upload.disable",
+        "title": "NetSuite: Disable Auto-Upload"
+      },
+      {
+        "command": "netsuite-auto-upload.uploadCurrent",
+        "title": "NetSuite: Upload Current File"
+      },
+      {
+        "command": "netsuite-auto-upload.testConnection",
+        "title": "NetSuite: Test RESTlet Connection"
+      },
+      {
+        "command": "netsuite-auto-upload.showLogs",
+        "title": "NetSuite: Show Upload Logs"
+      },
+      {
+        "command": "netsuite-auto-upload.createEnvFile",
+        "title": "NetSuite: Create .env File"
+      }
+    ],
+    "configuration": {
+      "title": "NetSuite Auto-Upload",
+      "properties": {
+        "netsuite-auto-upload.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic file uploads on save"
+        },
+        "netsuite-auto-upload.restletUrl": {
+          "type": "string",
+          "default": "",
+          "description": "NetSuite RESTlet External URL (can also be set in .env as NS_RESTLET_URL)"
+        },
+        "netsuite-auto-upload.accountId": {
+          "type": "string",
+          "default": "",
+          "description": "NetSuite Account ID (can also be set in .env as NS_ACCOUNT_ID)"
+        },
+        "netsuite-auto-upload.oauth.consumerKey": {
+          "type": "string",
+          "default": "",
+          "description": "OAuth Consumer Key (can also be set in .env as NS_CONSUMER_KEY)"
+        },
+        "netsuite-auto-upload.oauth.consumerSecret": {
+          "type": "string",
+          "default": "",
+          "description": "OAuth Consumer Secret (can also be set in .env as NS_CONSUMER_SECRET)"
+        },
+        "netsuite-auto-upload.oauth.tokenId": {
+          "type": "string",
+          "default": "",
+          "description": "OAuth Token ID (can also be set in .env as NS_TOKEN_ID)"
+        },
+        "netsuite-auto-upload.oauth.tokenSecret": {
+          "type": "string",
+          "default": "",
+          "description": "OAuth Token Secret (can also be set in .env as NS_TOKEN_SECRET)"
+        },
+        "netsuite-auto-upload.rootPath": {
+          "type": "string",
+          "default": "/SuiteScripts",
+          "description": "Default NetSuite path prefix (used only if FileCabinet folder not detected)"
+        },
+        "netsuite-auto-upload.watchFolder": {
+          "type": "string",
+          "default": "src",
+          "description": "Folder to watch for file saves"
+        },
+        "netsuite-auto-upload.uploadFrom": {
+          "type": "string",
+          "default": "src",
+          "description": "Folder to upload files from (use 'dist' for transpiled projects)"
+        },
+        "netsuite-auto-upload.waitForBuild": {
+          "type": "number",
+          "default": 500,
+          "minimum": 0,
+          "maximum": 5000,
+          "description": "Milliseconds to wait for build when uploadFrom differs from watchFolder"
+        },
+        "netsuite-auto-upload.watchPatterns": {
+          "type": "array",
+          "default": [
+            "**/*.js",
+            "**/*.ts",
+            "**/*.html",
+            "**/*.css",
+            "**/*.xml",
+            "**/*.json",
+            "**/*.ftl"
+          ],
+          "description": "File patterns to watch for auto-upload"
+        },
+        "netsuite-auto-upload.excludePatterns": {
+          "type": "array",
+          "default": [
+            "**/node_modules/**",
+            "**/.git/**",
+            "**/deploy.xml",
+            "**/manifest.xml",
+            "**/*.map"
+          ],
+          "description": "File patterns to exclude from auto-upload"
+        },
+        "netsuite-auto-upload.debounceDelay": {
+          "type": "number",
+          "default": 1000,
+          "minimum": 100,
+          "maximum": 10000,
+          "description": "Delay in milliseconds before uploading after save"
+        },
+        "netsuite-auto-upload.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notification popups on upload success/failure"
+        },
+        "netsuite-auto-upload.requestTimeout": {
+          "type": "number",
+          "default": 30000,
+          "description": "Request timeout in milliseconds"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "netsuite-auto-upload.uploadCurrent",
+        "key": "ctrl+alt+u",
+        "mac": "cmd+alt+u",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {
+    "oauth-1.0a": "^2.2.6",
+    "crypto-js": "^4.2.0",
+    "minimatch": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "eslint": "^8.56.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
