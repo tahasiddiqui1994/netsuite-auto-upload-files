@@ -4,7 +4,7 @@
 
 Stop wasting 10-30 seconds on every file upload. This extension automatically uploads your SuiteScript files to NetSuite the moment you save — in just 1-2 seconds.
 
-![Upload Lifecycle](https://raw.githubusercontent.com/tahasiddiqui1994/netsuite-auto-upload/main/assets/icon.png)
+![Upload Lifecycle](https://raw.githubusercontent.com/tahasiddiqui1994/netsuite-auto-upload-files/main/assets/icon.png)
 
 ---
 
@@ -28,7 +28,7 @@ Stop wasting 10-30 seconds on every file upload. This extension automatically up
 
 ```bash
 # Clone the repo
-git clone https://github.com/tahasiddiqui1994/netsuite-auto-upload.git
+git clone https://github.com/tahasiddiqui1994/netsuite-auto-upload-files.git
 
 # Go to RESTlet folder
 cd netsuite-auto-upload/netsuite-restlet
@@ -240,13 +240,13 @@ Contributions welcome! Please:
 2. Create a feature branch
 3. Submit a Pull Request
 
-[GitHub Repository](https://github.com/tahasiddiqui1994/netsuite-auto-upload)
+[GitHub Repository](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files)
 
 ---
 
 ## 📄 License
 
-MIT License - see [LICENSE](https://github.com/tahasiddiqui1994/netsuite-auto-upload/blob/main/LICENSE)
+MIT License - see [LICENSE](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files/blob/main/LICENSE)
 
 ---
 
