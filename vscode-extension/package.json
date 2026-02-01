@@ -2,7 +2,7 @@
   "name": "netsuite-auto-upload",
   "displayName": "NetSuite Auto-Upload",
   "description": "Automatically upload files to NetSuite File Cabinet on save. Lightning fast development workflow for SuiteScript developers.",
-  "version": "2.1.6",
+  "version": "2.1.9",
   "publisher": "tahasiddiqui",
   "author": {
     "name": "Muhammad Taha Siddiqui",
