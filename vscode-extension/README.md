@@ -1,4 +1,4 @@
-# NetSuite Auto-Upload
+# NetSuite Auto Upload
 
 **⚡ Save once. Upload instantly. Stay in flow.**
 

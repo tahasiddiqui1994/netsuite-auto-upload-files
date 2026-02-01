@@ -1,4 +1,4 @@
-# 🚀 NetSuite Auto-Upload
+# 🚀 NetSuite Auto Upload
 
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/tahasiddiqui.netsuite-auto-upload?style=flat-square&label=VS%20Code%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=tahasiddiqui.netsuite-auto-upload)
 [![GitHub stars](https://img.shields.io/github/stars/tahasiddiqui1994/netsuite-auto-upload-files?style=flat-square&logo=github)](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files)
@@ -33,7 +33,7 @@ Stop wasting time with manual file uploads to NetSuite. This extension automatic
 ext install tahasiddiqui.netsuite-auto-upload
 ```
 
-Or search "NetSuite Auto-Upload" in VS Code Extensions.
+Or search "NetSuite Auto Upload" in VS Code Extensions.
 
 **From VSIX:**
 1. Download the `.vsix` file from [Releases](https://github.com/tahasiddiqui1994/netsuite-auto-upload-files/releases)

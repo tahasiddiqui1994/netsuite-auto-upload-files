@@ -307,10 +307,10 @@ function calculateNetSuitePath(relativePath, workspaceFolder) {
  * Extension activation
  */
 function activate(context) {
-    console.log('NetSuite Auto-Upload extension is now active!');
+    console.log('NetSuite Auto Upload extension is now active!');
 
     // Create output channel for logs
-    outputChannel = vscode.window.createOutputChannel('NetSuite Auto-Upload');
+    outputChannel = vscode.window.createOutputChannel('NetSuite Auto Upload');
     context.subscriptions.push(outputChannel);
     
     log('Extension activated');
@@ -381,7 +381,7 @@ function activate(context) {
             const restletUrl = getCredential('restletUrl', workspaceFolder);
             if (!restletUrl) {
                 vscode.window.showInformationMessage(
-                    'NetSuite Auto-Upload: Create a .env file with your credentials',
+                    'NetSuite Auto Upload: Create a .env file with your credentials',
                     'Create .env',
                     'Don\'t show again'
                 ).then(selection => {
@@ -399,8 +399,8 @@ function activate(context) {
  */
 function updateStatusBar(state, extra = '') {
     const states = {
-        ready: { text: '$(cloud-upload) NS: Ready', tooltip: 'NetSuite Auto-Upload - Click for logs' },
-        disabled: { text: '$(circle-slash) NS: Disabled', tooltip: 'NetSuite Auto-Upload (Disabled) - Click to show logs' },
+        ready: { text: '$(cloud-upload) NS: Ready', tooltip: 'NetSuite Auto Upload - Click for logs' },
+        disabled: { text: '$(circle-slash) NS: Disabled', tooltip: 'NetSuite Auto Upload (Disabled) - Click to show logs' },
         uploading: { text: '$(sync~spin) NS: Uploading...', tooltip: `Uploading ${extra}` },
         success: { text: '$(check) NS: Uploaded', tooltip: `Last upload: ${extra}` },
         error: { text: '$(error) NS: Failed', tooltip: extra || 'Upload failed - Click for logs' }
@@ -560,7 +560,7 @@ async function uploadFile(document) {
 
     if (!restletUrl) {
         vscode.window.showErrorMessage(
-            'NetSuite Auto-Upload: RESTlet URL not configured. Add NS_RESTLET_URL to .env file.',
+            'NetSuite Auto Upload: RESTlet URL not configured. Add NS_RESTLET_URL to .env file.',
             'Create .env Template'
         ).then(selection => {
             if (selection === 'Create .env Template') {
@@ -923,7 +923,7 @@ async function configure() {
         log('Configuration saved successfully');
 
         const selection = await vscode.window.showInformationMessage(
-            'NetSuite Auto-Upload configured successfully!',
+            'NetSuite Auto Upload configured successfully!',
             'Test Connection',
             'Done'
         );
@@ -945,7 +945,7 @@ async function enable() {
     const config = vscode.workspace.getConfiguration('netsuite-auto-upload');
     await config.update('enabled', true, vscode.ConfigurationTarget.Workspace);
     log('Auto-upload enabled');
-    vscode.window.showInformationMessage('NetSuite Auto-Upload enabled');
+    vscode.window.showInformationMessage('NetSuite Auto Upload enabled');
 }
 
 /**
@@ -955,7 +955,7 @@ async function disable() {
     const config = vscode.workspace.getConfiguration('netsuite-auto-upload');
     await config.update('enabled', false, vscode.ConfigurationTarget.Workspace);
     log('Auto-upload disabled');
-    vscode.window.showInformationMessage('NetSuite Auto-Upload disabled');
+    vscode.window.showInformationMessage('NetSuite Auto Upload disabled');
 }
 
 /**
@@ -984,7 +984,7 @@ async function testConnection() {
 
     if (!restletUrl) {
         vscode.window.showErrorMessage(
-            'NetSuite Auto-Upload: RESTlet URL not configured. Add NS_RESTLET_URL to .env file.',
+            'NetSuite Auto Upload: RESTlet URL not configured. Add NS_RESTLET_URL to .env file.',
             'Create .env Template'
         ).then(selection => {
             if (selection === 'Create .env Template') {
@@ -1066,7 +1066,7 @@ async function createEnvTemplate(workspaceFolder) {
     }
 
     const template = `# ============================================
-# NetSuite Auto-Upload Configuration
+# NetSuite Auto Upload Configuration
 # ============================================
 # Copy this file to .env and fill in your credentials
 # IMPORTANT: Add .env to your .gitignore to keep credentials secure!

@@ -16,7 +16,7 @@
  * Deploy this as a RESTlet and note down the external URL.
  * 
  * @version 2.1.0
- * @author NetSuite Auto-Upload
+ * @author Muhammad Taha Siddiqui
  */
 
 define(['N/file', 'N/error', 'N/search', 'N/record', 'N/runtime', 'N/query'], function(file, error, search, record, runtime, query) {
@@ -42,7 +42,7 @@ define(['N/file', 'N/error', 'N/search', 'N/record', 'N/runtime', 'N/query'], fu
             
             return {
                 success: true,
-                message: 'NetSuite Auto-Upload RESTlet is active',
+                message: 'NetSuite Auto Upload is active',
                 version: '2.1.0',
                 timestamp: new Date().toISOString(),
                 user: {

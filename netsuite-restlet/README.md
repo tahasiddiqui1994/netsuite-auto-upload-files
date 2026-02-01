@@ -1,6 +1,6 @@
-# NetSuite Auto-Upload RESTlet
+# NetSuite Auto Upload RESTlet
 
-This is an SDF (SuiteCloud Development Framework) project containing the RESTlet required for the [NetSuite Auto-Upload](https://marketplace.visualstudio.com/items?itemName=tahasiddiqui.netsuite-auto-upload) VS Code extension.
+This is an SDF (SuiteCloud Development Framework) project containing the RESTlet required for the [NetSuite Auto Upload](https://marketplace.visualstudio.com/items?itemName=tahasiddiqui.netsuite-auto-upload) VS Code extension.
 
 ---
 
