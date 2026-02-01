@@ -4,6 +4,11 @@
   "description": "Automatically upload files to NetSuite File Cabinet on save. Lightning fast development workflow for SuiteScript developers.",
   "version": "2.1.10",
   "publisher": "tahasiddiqui",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
   "author": {
     "name": "Muhammad Taha Siddiqui",
     "url": "https://github.com/tahasiddiqui1994"
