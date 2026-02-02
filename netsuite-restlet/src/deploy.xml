@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy>
-    <objects>
-        <path>~/Objects/*</path>
-    </objects>
     <files>
         <path>~/FileCabinet/SuiteScripts/*</path>
     </files>
+    <objects>
+        <path>~/Objects/*</path>
+    </objects>
 </deploy>

@@ -39,3 +39,5 @@ temp/
 
 # Source maps
 *.map
+
+netsuite-restlet/project.json
