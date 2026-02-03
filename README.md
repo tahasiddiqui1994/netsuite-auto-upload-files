@@ -152,7 +152,7 @@ If you transpile your code:
 
 ### "Invalid login attempt"
 - Verify all 6 credentials in `.env` are correct
-- Check Account ID format (use `-sb1` for sandbox, not `_SB1`)
+- Check Account ID format (use `_SB1` for sandbox, not `-sb1`)
 - Ensure Integration has Token-Based Authentication enabled
 - Verify Access Token is active
 

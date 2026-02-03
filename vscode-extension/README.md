@@ -199,7 +199,7 @@ my-project/
 ## 🔧 Troubleshooting
 
 ### "Invalid login attempt"
-- ✓ Verify Account ID format (`1234567-sb1` for sandbox)
+- ✓ Verify Account ID format (`1234567_SB1` for sandbox)
 - ✓ Check all 6 credentials in `.env`
 - ✓ Ensure Integration has Token-Based Auth enabled
 - ✓ Verify Access Token is active (not revoked)
